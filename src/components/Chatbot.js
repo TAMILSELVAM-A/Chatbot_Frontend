@@ -39,7 +39,13 @@ const Chatbot = () => {
       setInput("");
     }
     try {
-      const response = await fetch("http://localhost:8000/chat", {
+      // const response = await fetch("http://localhost:8000/chat", {
+      //   method: "POST",
+      //   headers: { "Content-Type": "application/json" },
+      //   body: JSON.stringify({ user_id: "user1", query: messageText }),
+      // });
+
+      const response = await fetch("https://chatbot-backend-rqd4.onrender.com", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ user_id: "user1", query: messageText }),
