@@ -45,7 +45,7 @@ const Chatbot = () => {
       //   body: JSON.stringify({ user_id: "user1", query: messageText }),
       // });
 
-      const response = await fetch("https://chatbot-backend-d9ea.onrender.com", {
+      const response = await fetch("https://chatbot-backend-d9ea.onrender.com/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ user_id: "user1", query: messageText }),
